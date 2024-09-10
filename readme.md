@@ -13,7 +13,7 @@
 <p align="center">
   <h3 align="center">🏋️‍♂️ Assistente de Personal Trainer - Gerador de Treino Ideal</h3>
 Este projeto é um desafio de Prompt Engineer, onde o objetivo é criar um prompt que ajuda a montar o treino ideal para cada combinação de fatores, como biotipo corporal, disponibilidade de tempo e tipo de exercícios preferidos. O assistente de personal trainer gerado por esse prompt será capaz de personalizar os treinos de acordo com as características e necessidades do usuário.
-O projeto deve ser feito utilizando as boas práticas de prompt engineer.
+O projeto deve ser feito utilizando as boas práticas de prompt engineering.
 </p>
 
 ## 📋 Índice
@@ -23,7 +23,7 @@ O projeto deve ser feito utilizando as boas práticas de prompt engineer.
 - [💪 Biotipos Corporais](#-biotipos-corporais)
 - [📅 Dias Disponíveis para Treino](#-dias-disponíveis-para-treino)
 - [🏋️ Tipos de Exercícios](#️-tipos-de-exercícios)
-- [🛠️ Regras de negócio](#️-regras-de-negócio)
+- [🛠️ Regras de Negócio](#️-regras-de-negócio)
 - [📖 Material de Apoio](#-material-de-apoio)
 - [🎯 Prompt de Resposta Proposto](#-prompt-de-resposta-proposto)
 
@@ -76,11 +76,34 @@ A primeira regra para personalizar o treino é determinar o biotipo corporal do 
 
 A segunda regra é determinar quantos dias por semana o usuário tem disponível para treinar. Dependendo do número de dias, o treino sugerido pode variar:
 
-| **Imagem**                                                     | **Dias por Semana** | **Tipo de Treino Sugerido** |
-| -------------------------------------------------------------- | ------------------- | --------------------------- |
-| <img src=".github/assets/calendar.png" width="50" height="50"> | 1 dia               | Treino Full Body            |
-| <img src=".github/assets/calendar.png" width="50" height="50"> | 3 dias              | Treino ABC                  |
-| <img src=".github/assets/calendar.png" width="50" height="50"> | 5 dias              | Treino ABCDE                |
+<table>
+  <tr>
+    <th>Imagem</th>
+    <th>Dias por Semana</th>
+    <th>Tipo de Treino Sugerido</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <img src=".github/assets/calendar.png" width="50" height="50">
+    </td>
+    <td>1 dia</td>
+    <td>Treino Full Body</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <img src=".github/assets/calendar.png" width="50" height="50">
+    </td>
+    <td>3 dias</td>
+    <td>Treino ABC</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <img src=".github/assets/calendar.png" width="50" height="50">
+    </td>
+    <td>5 dias</td>
+    <td>Treino ABCDE</td>
+  </tr>
+</table>
 
 - **Full Body**: Treino que trabalha o corpo todo em uma única sessão.
 - **ABC**: Divisão do treino em três dias, cada um focado em grupos musculares diferentes.
@@ -92,17 +115,52 @@ A segunda regra é determinar quantos dias por semana o usuário tem disponível
 
 A terceira regra envolve a escolha do tipo de exercício preferido. Aqui estão algumas categorias com exemplos:
 
-| **Imagem**                                                       | **Tipo de Treino** | **Descrição**                                                                                                 |
-| ---------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------- |
-| <img src=".github/assets/dumbells.png" width="50%" height="50%"> | **Funcional**      | Exercícios que melhoram a funcionalidade do corpo, usando movimentos naturais.                                |
-| <img src=".github/assets/4760665.png" width="50%" height="50%">  | **Maquinário**     | Exercícios feitos em máquinas, com foco em isolar grupos musculares.                                          |
-| <img src=".github/assets/barr.png" width="50%" height="50%">     | **Peso Livre**     | Exercícios com pesos livres, como halteres e barras, para trabalhar vários grupos musculares simultaneamente. |
-| <img src=".github/assets/cardio.png" width="50%" height="50%">   | **Cardio**         | Exercícios voltados para melhorar a resistência cardiovascular, como corrida ou ciclismo.                     |
-| <img src=".github/assets/hiit.png" width="50%" height="50%">     | **HIIT**           | Treinos intervalados de alta intensidade, ótimos para queima de gordura.                                      |
+<table>
+  <tr>
+    <th>Imagem</th>
+    <th>Tipo de Treino</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <img src=".github/assets/dumbells.png" width="50%" height="50%">
+    </td>
+    <td><strong>Funcional</strong></td>
+    <td>Exercícios que melhoram a funcionalidade do corpo, usando movimentos naturais.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <img src=".github/assets/4760665.png" width="50%" height="50%">
+    </td>
+    <td><strong>Maquinário</strong></td>
+    <td>Exercícios feitos em máquinas, com foco em isolar grupos musculares.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <img src=".github/assets/barr.png" width="50%" height="50%">
+    </td>
+    <td><strong>Peso Livre</strong></td>
+    <td>Exercícios com pesos livres, como halteres e barras, para trabalhar vários grupos musculares simultaneamente.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <img src=".github/assets/cardio.png" width="50%" height="50%">
+    </td>
+    <td><strong>Cardio</strong></td>
+    <td>Exercícios voltados para melhorar a resistência cardiovascular, como corrida ou ciclismo.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <img src=".github/assets/hiit.png" width="50%" height="50%">
+    </td>
+    <td><strong>HIIT</strong></td>
+    <td>Treinos intervalados de alta intensidade, ótimos para queima de gordura.</td>
+  </tr>
+</table>
 
 ---
 
-## 🛠️ Regras de negócio
+## 🛠️ Regras de Negócio
 
 1. **Identifique seu biotipo corporal** consultando a seção de biotipos.
 2. **Determine quantos dias por semana você pode treinar** e escolha o tipo de treino mais adequado.
@@ -115,7 +173,7 @@ A terceira regra envolve a escolha do tipo de exercício preferido. Aqui estão 
 
 Aqui estão alguns recursos adicionais que podem ser úteis para entender melhor o projeto e as práticas de prompt engineering:
 
-- [Fundamentos de Engenharia de prompt](https://elidianaandrade.gitbook.io/fundamentos-de-engenharia-de-prompts-com-claude-3)
+- [Fundamentos de Engenharia de Prompt](https://elidianaandrade.gitbook.io/fundamentos-de-engenharia-de-prompts-com-claude-3)
 - [Boas práticas de prompt](https://aline-antunes.gitbook.io/otimize-seus-prompts-e-aprenda-mais-usando-ias-1)
 
 ---
@@ -126,36 +184,37 @@ Aqui estão alguns recursos adicionais que podem ser úteis para entender melhor
 
 "Finja ser um personal trainer e, com base nas características do indivíduo, monte um treino completo.
 
-Variáveis a considerar:
-1- Biotipo: 
-1.1- Ectomorfo: Corpo mais magro, difícil ganhar peso e massa muscular.
-1.2- Mesomorfo: Corpo naturalmente musculoso, facilidade para ganhar massa muscular e perder gordura.
-1.3- Endomorfo: Corpo com tendência a acumular gordura, maior dificuldade em perder peso.
+**Variáveis a considerar:**
 
-2- Disponibilidade semanal:
-2.1- 1 dia: Treino Full Body
-2.2- 3 dias: Treino ABC
-2.3- 5 dias: Treino ABCDE
+1- **Biotipo:** 
+   - 1.1- Ectomorfo: Corpo mais magro, difícil ganhar peso e massa muscular.
+   - 1.2- Mesomorfo: Corpo naturalmente musculoso, facilidade para ganhar massa muscular e perder gordura.
+   - 1.3- Endomorfo: Corpo com tendência a acumular gordura, maior dificuldade em perder peso.
 
-3- Tipos de exercício:
-3.1- Funcional: Exercícios que melhoram a funcionalidade do corpo, usando movimentos naturais.
-3.2- Maquinário: Exercícios feitos em máquinas, com foco em isolar grupos musculares.
-3.3- Peso Livre: Exercícios com pesos livres, como halteres e barras, para trabalhar vários grupos musculares simultaneamente.
-3.4- Cardio: Exercícios voltados para melhorar a resistência cardiovascular, como corrida ou ciclismo.
-3.5- HIIT: Treinos intervalados de alta intensidade, ótimos para queima de gordura.
-3.6- Sem restrição de exercício
+2- **Disponibilidade semanal:**
+   - 2.1- 1 dia: Treino Full Body
+   - 2.2- 3 dias: Treino ABC
+   - 2.3- 5 dias: Treino ABCDE
 
-4- Nível de resistência:
-4.1- Nível 1: Sedentário e iniciante nos treinos
-4.2- Nível 2: Treina há mais de 3 meses e menos de 1 ano
-4.3- Nível 3: Treina há mais de 1 ano
-4.4- Nível 4: Treina pesado há mais de 1 ano
+3- **Tipos de exercício:**
+   - 3.1- Funcional: Exercícios que melhoram a funcionalidade do corpo, usando movimentos naturais.
+   - 3.2- Maquinário: Exercícios feitos em máquinas, com foco em isolar grupos musculares.
+   - 3.3- Peso Livre: Exercícios com pesos livres, como halteres e barras, para trabalhar vários grupos musculares simultaneamente.
+   - 3.4- Cardio: Exercícios voltados para melhorar a resistência cardiovascular, como corrida ou ciclismo.
+   - 3.5- HIIT: Treinos intervalados de alta intensidade, ótimos para queima de gordura.
+   - 3.6- Sem restrição de exercício
 
-5- Restrição e cuidados:
-5.1- Nenhuma restrição
-5.2- Dores no joelho
-5.3- Dores na coluna
-5.4- Dores no ombro
+4- **Nível de resistência:**
+   - 4.1- Nível 1: Sedentário e iniciante nos treinos
+   - 4.2- Nível 2: Treina há mais de 3 meses e menos de 1 ano
+   - 4.3- Nível 3: Treina há mais de 1 ano
+   - 4.4- Nível 4: Treina pesado há mais de 1 ano
 
-Características do indivíduo:
+5- **Restrição e cuidados:**
+   - 5.1- Nenhuma restrição
+   - 5.2- Dores no joelho
+   - 5.3- Dores na coluna
+   - 5.4- Dores no ombro
+
+**Características do indivíduo:**
 (Preencher a cada aluno para obter resposta personalizada)"
